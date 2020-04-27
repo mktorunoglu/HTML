@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script>
+        function readContent(id, file) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                document.getElementById(id).innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", file, true);
+            xhttp.send();
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Chrome'da çalışmıyor; Edge'te çalışıyor :)</h1>
+    <br><br><br><br>
+    <div>
+        <div id="col1" class="col-lg-3 col-md-3 col-sm-3">
+            <button type="button" class="center-block" onclick="readContent('col1', 'text1.txt')">text1.txt içeriğini oku.</button>
+        </div>
+
+        <div id="col2" class="col-lg-3 col-md-3 col-sm-3">
+            <button type="button" class="center-block" onclick="readContent('col2', 'text2.txt')">text2.txt içeriğini oku.</button>
+        </div>
+
+        <div id="col3" class="col-lg-3 col-md-3 col-sm-3">
+            <button type="button" class="center-block" onclick="readContent('col3', 'text3.txt')">text3.txt içeriğini oku.</button>
+        </div>
+
+        <div id="col4" class="col-lg-3 col-md-3 col-sm-3">
+            <button type="button" class="center-block" onclick="readContent('col4', 'text4.txt')">text4.txt içeriğini oku.</button>
+        </div>
+    </div>
+
+</body>
+</html>
