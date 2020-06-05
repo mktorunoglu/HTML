@@ -1,0 +1,50 @@
+*{
+    /* Tüm etiketler için */
+    color: white;
+}
+
+p{
+    /* p etiketleri için */
+    color: white;
+}
+
+div p{
+    /* div içerisindeki p etiketleri için */
+    color: white;
+}
+
+.container div{
+    /* classı "container" olan div içerisindeki div etiketleri için */
+    color: white;
+}
+
+.container div.box{
+    /* classı "container" olan div içerisindeki classı box olan div etiketleri için */
+    color: white;
+}
+
+div, p{
+    /* div ve p etiketleri için */
+    color: white;
+}
+
+div.box, p{
+    /* classı box olan div ve p etiketleri için */
+    color: white;
+}
+
+div>p{
+    /* üst etiketi div olan p etiketleri için */
+    color: white;
+}
+
+p~div{
+    /* p ile aynı seviyedeki div etiketleri için */
+    color: white;
+}
+
+p+div{
+    /* p etiketinden sonra gelen ilk div etiketi için */
+    color: white;
+}
+

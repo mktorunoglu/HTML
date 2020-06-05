@@ -1,0 +1,12 @@
+a{
+    color: red;
+    text-decoration: none;
+}
+
+li{
+    display: inline; /* Liste elemanları yan yana */
+}
+
+h1{
+    color: white;
+}
