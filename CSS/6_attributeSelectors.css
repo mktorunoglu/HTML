@@ -1,0 +1,35 @@
+p[title]{
+    /* title niteliği olan p etiketleri için */
+    color: white;
+}
+
+p[title="third paragraph"]{
+    /* title niteliği "third paragraph" olan p etiketleri için */
+    color: white;
+}
+
+p[title~="third"]{
+    /* title niteliğinde "third" geçen tüm p etiketleri için */
+    color: white;
+}
+
+a[href^="http"]{
+    /* href niteliği "http" ile başlayan a etiketleri için */
+    color: white;
+}
+
+a[href$="com"]{
+    /* href niteliği "com" ile biten a etiketleri için */
+    color: white;
+}
+
+a[href="abc"][target="def"]{
+    /* href niteliği "abc", target niteliği "def" olan a etiketleri için */
+    color: white;
+}
+
+input[type="text"]{
+    /* type niteliği "text" olan input etiketleri için */
+    color: white;
+}
+

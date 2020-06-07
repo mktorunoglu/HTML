@@ -1,0 +1,87 @@
+/* Pseudo Elements */
+
+p::first-line{
+    /* p etiketlerinin ilk satırları için */
+    color: white;
+}
+
+p.about::first-line{
+    /* classı about olan p etiketlerinin ilk satırları için */
+    color: white;
+}
+
+p::first-letter{
+    /* p etiketlerinin ilk harfleri için */
+    color: white;
+}
+
+p::after{
+    content: "deneme";
+    display: block;
+    /* p etiketlerinden sonra content içeriği yazdırlır. */
+}
+
+p::before{
+    content: "deneme";
+    display: block;
+    /* p etiketlerinden önce content içeriği yazdırlır. */
+}
+
+
+/* Pseudo Classes */
+
+ul li{
+    /* ul etiketlerinin li elemanları için */
+    color: white;
+}
+
+ul li:first-child{
+    /* ul etiketlerinin ilk elemanları için */
+    color: white;
+}
+
+ul li:last-child{
+    /* ul etiketlerinin son elemanları için */
+    color: white;
+}
+
+ul li:nth-of-type(even){
+    /* ul etiketlerinin çift sıra numaralı li elemanları için */
+    color: white;
+}
+
+ul li:nth-of-type(odd){
+    /* ul etiketlerinin tek sıra numaralı li elemanları için */
+    color: white;
+}
+
+a:link{
+    /* ziyaret edilmemiş link özellikli a etiketleri için */
+    color: white;
+}
+
+a:visited{
+    /* ziyaret edilmiş link özellikli a etiketleri için */
+    color: white;
+}
+
+a:hover{
+    /* mouse ile odaklanmış link özellikli a etiketleri için */
+    color: white;
+}
+
+a:active{
+    /* mouse ile tıklanmış link özellikli a etiketleri için */
+    color: white;
+}
+
+span{
+    display: none;
+    /* span etiketi içerisindekiler görünmez. */
+}
+
+div:hover span{
+    display: block;
+    /* div etiketine mouse ile odaklandığında span etiketi içerisindekiler görünür. */
+}
+
