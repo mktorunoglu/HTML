@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 2px;
+        }
+        #a1{
+            background-color: red;
+            margin: 10px 20px 30px 40px; /* top 10px, right 20px, bottom 30px, left 40px*/
+        }
+        #a2{
+            background-color: blue;
+            margin: 10px 20px /* top 10px, right 20px, bottom 10px, left 20px*/
+        }
+        #a3{
+            background-color: green;
+            margin-left: 60px;
+        }
+        body{
+            margin: 0px;
+        }
+        span{
+            background-color: red;
+        }
+        span.sc{
+            background-color: salmon;
+            margin-top: 22222220px; /* span etiketleri için "display: inline-block" özelliği olmadan margin-top ve margin-bottom nitelikleri işe yaramaz. */ 
+            margin-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="a1">1</div>
+    <div id="a2">2</div>
+    <div id="a3">3</div>
+
+    <span>text1</span>
+    <span>text2</span>
+    <span>text3</span>
+
+    <span class="sc">text1</span>
+    <span class="sc">text2</span>
+    <span class="sc">text3</span>
+</body>
+</html>
