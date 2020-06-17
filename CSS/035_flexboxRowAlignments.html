@@ -7,51 +7,53 @@
     <style>
         .item{
             background-color: chocolate;
-            padding: 40px;
+            padding: 30px;
             margin: 30px;
             color: #fff;
             font-size: 25px;
         }
-        
+
         .container{
             background-color: #f2f2f2;
             padding: 15px;
+            height: 1000px;
+            display: flex;
+            flex-wrap: wrap;
             border: 1px solid black;
         }
 
+        .i3{
+            flex: 1;
+        }
+
+        .c1{
+            align-content: flex-start;
+        }
+
         .c2{
-            display: flex;
+            align-content: flex-end;
         }
 
         .c3{
-            display: flex;
-            flex-direction: row-reverse;
+            align-content: stretch;
         }
 
         .c4{
-            display: flex;
-            flex-direction: column;
+            align-content: center;
         }
 
         .c5{
-            display: flex;
-            flex-direction: column-reverse;
+            align-content: space-between;
         }
 
         .c6{
-            display: flex;
-            flex-wrap: nowrap;
+            align-content: space-around;
         }
 
         .c7{
-            display: flex;
-            flex-wrap: wrap;
+            align-content: space-evenly;
         }
 
-        .c8{
-            display: flex;
-            flex-wrap: wrap-reverse;
-        }
     </style>
 </head>
 <body>
@@ -59,63 +61,7 @@
     <div class="container c1">
         <div class="item">item1</div>
         <div class="item">item2</div>
-        <div class="item">item3</div>
-        <div class="item">item4</div>
-    </div>
-    <br><br>
-
-    2
-    <div class="container c2">
-        <div class="item">item1</div>
-        <div class="item">item2</div>
-        <div class="item">item3</div>
-        <div class="item">item4</div>
-    </div>
-    <br><br>
-
-    3
-    <div class="container c3">
-        <div class="item">item1</div>
-        <div class="item">item2</div>
-        <div class="item">item3</div>
-        <div class="item">item4</div>
-    </div>
-    <br><br>
-
-    4
-    <div class="container c4">
-        <div class="item">item1</div>
-        <div class="item">item2</div>
-        <div class="item">item3</div>
-        <div class="item">item4</div>
-    </div>
-    <br><br>
-
-    5
-    <div class="container c5">
-        <div class="item">item1</div>
-        <div class="item">item2</div>
-        <div class="item">item3</div>
-        <div class="item">item4</div>
-    </div>
-    <br><br>
-
-    6
-    <div class="container c6">
-        <div class="item">item1</div>
-        <div class="item">item2</div>
-        <div class="item">item3</div>
-        <div class="item">item4</div>
-        <div class="item">item5</div>
-        <div class="item">item6</div>
-    </div>
-    <br><br>
-
-    7
-    <div class="container c7">
-        <div class="item">item1</div>
-        <div class="item">item2</div>
-        <div class="item">item3</div>
+        <div class="item i3">item3</div>
         <div class="item">item4</div>
         <div class="item">item5</div>
         <div class="item">item6</div>
@@ -124,11 +70,76 @@
     </div>
     <br><br>
 
-    8
-    <div class="container c8">
+    2
+    <div class="container c2">
         <div class="item">item1</div>
         <div class="item">item2</div>
-        <div class="item">item3</div>
+        <div class="item i3">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+        <div class="item">item7</div>
+        <div class="item">item8</div>
+    </div>
+    <br><br>
+    
+    3
+    <div class="container c3">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item i3">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+        <div class="item">item7</div>
+        <div class="item">item8</div>
+    </div>
+    <br><br>
+
+    4
+    <div class="container c4">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item i3">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+        <div class="item">item7</div>
+        <div class="item">item8</div>
+    </div>
+    <br><br>
+
+    5
+    <div class="container c5">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item i3">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+        <div class="item">item7</div>
+        <div class="item">item8</div>
+    </div>
+    <br><br>
+
+    6
+    <div class="container c6">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item i3">item3</div>
+        <div class="item">item4</div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+        <div class="item">item7</div>
+        <div class="item">item8</div>
+    </div>
+    <br><br>
+
+    7
+    <div class="container c7">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item i3">item3</div>
         <div class="item">item4</div>
         <div class="item">item5</div>
         <div class="item">item6</div>

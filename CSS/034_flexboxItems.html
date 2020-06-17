@@ -13,196 +13,120 @@
             font-size: 25px;
         }
 
-        .container1{
+        .container{
             background-color: #f2f2f2;
             padding: 15px;
             display: flex;
             justify-content: center;
             align-items: center;
+            border: 1px solid black;
         }
-        .container1 .i2{
+
+        .c1 .i2{
             height: 200px;
         }
-        .container1 .i4{
+
+        .c1 .i4{
             align-self: flex-end;
         }
 
-        .container1 .i1{
+        .c1 .i1{
             align-self: stretch;
         }
 
-        .container1 .i3{
+        .c1 .i3{
             align-self: flex-start;
         }
 
-        .container2{
-            background-color: #f2f2f2;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container2 .i2{
+        .c2 .i2{
             height: 200px;
             order: 1;
         }
-        .container2 .i4{
+        
+        .c2 .i4{
             align-self: flex-end;
             order: 2;
         }
 
-        .container2 .i1{
+        .c2 .i1{
             align-self: stretch;
             order: 3;
         }
 
-        .container2 .i3{
+        .c2 .i3{
             align-self: flex-start;
             order: 4;
         }
 
-        .container3{
-            background-color: #f2f2f2;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container3 .item{
+        .c3 .item{
             flex-grow: 1;
         }
 
-        .container4{
-            background-color: #f2f2f2;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container4 .i1{
+        .c4 .i1{
             flex-grow: 1;
         }
 
-        .container4 .i2{
+        .c4 .i2{
             flex-grow: 2;
         }
 
-        .container4 .i3{
+        .c4 .i3{
             flex-grow: 3;
         }
 
-        .container4 .i4{
+        .c4 .i4{
             flex-grow: 4;
         }
 
-        .container5{
-            background-color: #f2f2f2;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container5 .i1{
+        .c5 .i1{
             flex: 1;
         }
 
-        .container5 .i2{
+        .c5 .i2{
             flex: 2;
         }
 
-        .container5 .i3{
+        .c5 .i3{
             flex: 3;
         }
 
-        .container5 .i4{
+        .c5 .i4{
             flex: 4;
         }
 
-        .container6{
-            background-color: #f2f2f2;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container6 .i1{
+        .c6 .i1{
             flex: 1;
         }
 
-        .container7{
-            background-color: #f2f2f2;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container7 .i1{
+        .c7 .i1{
             flex-basis: 50%;
         }
 
-        .container8{
-            background-color: #f2f2f2;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container8 .i1{
+        .c8 .i1{
             flex-basis: 70%;
         }
 
-        .container8 .i2{
+        .c8 .i2{
             flex-basis: 30%;
         }
 
-        .container9{
-            background-color: #f2f2f2;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container9 .i2{
+        .c9 .i2{
             flex-basis: 500px;
         }
 
-        .container10{
-            background-color: #f2f2f2;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container10 .i2{
+        .c10 .i2{
             flex-basis: 500px;
             flex-shrink: 0;
         }
 
-        .container11{
-            background-color: #f2f2f2;
-            padding: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container11 .i2{
+        .c11 .i2{
             flex: 0 0 500px; /* flex-grow, flex-shrink, flex-basis nitelikleri sırasıyla */
         }
     </style>
 </head>
 <body>
     1
-    <div class="container1">
+    <div class="container c1">
         <div class="item i1">item1</div>
         <div class="item i2">item2</div>
         <div class="item i3">item3</div>
@@ -213,7 +137,7 @@
     <br><br>
 
     2
-    <div class="container2">
+    <div class="container c2">
         <div class="item i1">item1</div>
         <div class="item i2">item2</div>
         <div class="item i3">item3</div>
@@ -222,7 +146,7 @@
     <br><br>
 
     3
-    <div class="container3">
+    <div class="container c3">
         <div class="item">item1</div>
         <div class="item">item2</div>
         <div class="item">item3</div>
@@ -231,7 +155,7 @@
     <br><br>
 
     4
-    <div class="container4">
+    <div class="container c4">
         <div class="item i1">item1</div>
         <div class="item i2">item2</div>
         <div class="item i3">item3</div>
@@ -240,7 +164,7 @@
     <br><br>
 
     5
-    <div class="container5">
+    <div class="container c5">
         <div class="item i1">item1</div>
         <div class="item i2">item2</div>
         <div class="item i3">item3</div>
@@ -249,7 +173,7 @@
     <br><br>
 
     6
-    <div class="container6">
+    <div class="container c6">
         <div class="item i1">item1</div>
         <div class="item">item2</div>
         <div class="item">item3</div>
@@ -258,7 +182,7 @@
     <br><br>
 
     7
-    <div class="container7">
+    <div class="container c7">
         <div class="item i1">item1</div>
         <div class="item">item2</div>
         <div class="item">item3</div>
@@ -267,7 +191,7 @@
     <br><br>
 
     8
-    <div class="container8">
+    <div class="container c8">
         <div class="item i1">item1</div>
         <div class="item i2">item2</div>
         <div class="item">item3</div>
@@ -276,7 +200,7 @@
     <br><br>
 
     9
-    <div class="container9">
+    <div class="container c9">
         <div class="item">item1</div>
         <div class="item i2">item2</div>
         <div class="item">item3</div>
@@ -285,7 +209,7 @@
     <br><br>
 
     10
-    <div class="container10">
+    <div class="container c10">
         <div class="item">item1</div>
         <div class="item i2">item2</div>
         <div class="item">item3</div>
@@ -294,7 +218,7 @@
     <br><br>
 
     11
-    <div class="container11">
+    <div class="container c11">
         <div class="item">item1</div>
         <div class="item i2">item2</div>
         <div class="item">item3</div>
