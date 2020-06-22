@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="w-75 mx-auto my-4">
+    1<br><br>
+    <p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#content1">Press Button</button>
+    </p>
+    <div id="content1" class="collapse">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi eligendi nam porro rem distinctio ab reiciendis explicabo quod exercitationem illum accusantium hic pariatur odit nobis repellendus maxime quis soluta, ratione qui dolorum consequatur optio! Doloremque magnam laborum quibusdam sunt assumenda eos architecto saepe quasi animi cumque quo repudiandae, consequatur quod illo aliquid molestiae, tempora at optio tenetur. Quisquam voluptatum, quidem sapiente amet sed praesentium explicabo velit illum repudiandae! Dicta officiis eveniet quae, doloremque veritatis, aut vero, accusamus cum magnam minus similique ad tenetur et vitae. Molestiae dolore iusto reprehenderit eum vero dolores, nesciunt perspiciatis veritatis facere ducimus, optio et nihil?</p>
+    </div>
+    <br><br>
+
+    2<br><br>
+    <p>
+        <a type="button" class="btn btn-primary" data-toggle="collapse" data-target="#content2">Press Link</a>
+    </p>
+    <div id="content2" class="collapse">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi eligendi nam porro rem distinctio ab reiciendis explicabo quod exercitationem illum accusantium hic pariatur odit nobis repellendus maxime quis soluta, ratione qui dolorum consequatur optio! Doloremque magnam laborum quibusdam sunt assumenda eos architecto saepe quasi animi cumque quo repudiandae, consequatur quod illo aliquid molestiae, tempora at optio tenetur. Quisquam voluptatum, quidem sapiente amet sed praesentium explicabo velit illum repudiandae! Dicta officiis eveniet quae, doloremque veritatis, aut vero, accusamus cum magnam minus similique ad tenetur et vitae. Molestiae dolore iusto reprehenderit eum vero dolores, nesciunt perspiciatis veritatis facere ducimus, optio et nihil?</p>
+    </div>
+    <br><br>
+
+    3<br><br>
+    <p>
+        <a type="button" class="btn btn-primary" data-toggle="collapse" data-target="#content3">Press Link</a>
+    </p>
+    <div id="content3" class="collapse show">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi eligendi nam porro rem distinctio ab reiciendis explicabo quod exercitationem illum accusantium hic pariatur odit nobis repellendus maxime quis soluta, ratione qui dolorum consequatur optio! Doloremque magnam laborum quibusdam sunt assumenda eos architecto saepe quasi animi cumque quo repudiandae, consequatur quod illo aliquid molestiae, tempora at optio tenetur. Quisquam voluptatum, quidem sapiente amet sed praesentium explicabo velit illum repudiandae! Dicta officiis eveniet quae, doloremque veritatis, aut vero, accusamus cum magnam minus similique ad tenetur et vitae. Molestiae dolore iusto reprehenderit eum vero dolores, nesciunt perspiciatis veritatis facere ducimus, optio et nihil?</p>
+    </div>
+    <br><br>
+
+    4<div id="accordion">
+        <div class="card">
+            <div class="card-header">
+                <a href="#collapse1" class="card-link" data-toggle="collapse">Link 1</a>
+            </div>
+
+            <div id="collapse1" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi libero similique beatae deserunt, eaque amet, quam odio necessitatibus nobis tenetur sit facilis laboriosam rem magni eum voluptate, porro hic maxime nulla modi officia optio? Impedit ex voluptatem ducimus doloremque rem ratione deleniti fugit non autem! Magni sapiente similique magnam delectus.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a href="#collapse2" class="card-link" data-toggle="collapse">Link 2</a>
+            </div>
+
+            <div id="collapse2" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi libero similique beatae deserunt, eaque amet, quam odio necessitatibus nobis tenetur sit facilis laboriosam rem magni eum voluptate, porro hic maxime nulla modi officia optio? Impedit ex voluptatem ducimus doloremque rem ratione deleniti fugit non autem! Magni sapiente similique magnam delectus.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a href="#collapse3" class="card-link" data-toggle="collapse">Link 3</a>
+            </div>
+
+            <div id="collapse3" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi libero similique beatae deserunt, eaque amet, quam odio necessitatibus nobis tenetur sit facilis laboriosam rem magni eum voluptate, porro hic maxime nulla modi officia optio? Impedit ex voluptatem ducimus doloremque rem ratione deleniti fugit non autem! Magni sapiente similique magnam delectus.</p>
+                </div>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
