@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="container my-4">
+    1<br><br>
+    <div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Open Modal</button>
+
+        <div class="modal" id="myModal1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">1 Lorem, ipsum.</h4>
+                    </div>
+
+                    <div class="modal-body">1 Lorem ipsum dolor sit amet.</div>
+
+                    <div class="modal-footer">1 Lorem, ipsum.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    2<br><br>
+    <div>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal2">Open Modal</button>
+
+        <div class="modal" id="myModal2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">2 Lorem, ipsum.</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">2 Lorem ipsum dolor sit amet.</div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    3<br><br>
+    <div>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal3">Open Modal</button>
+
+        <div class="modal fade" id="myModal3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">3 Lorem, ipsum.</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">3 Lorem ipsum dolor sit amet.</div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    4<br><br>
+    <div>
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal4">Open Modal</button>
+
+        <div class="modal fade" id="myModal4">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">4 Lorem, ipsum.</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">4 Lorem ipsum dolor sit amet.</div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    5<br><br>
+    <div>
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal5">Open Modal</button>
+
+        <div class="modal fade" id="myModal5">
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">5 Lorem, ipsum.</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">5 Lorem ipsum dolor sit amet.</div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    6<br><br>
+    <div>
+        <div class="modal fade" id="myModal6">
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">6 Lorem, ipsum.</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">6 Lorem ipsum dolor sit amet.</div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            $('#myModal6').modal('show');
+        });
+    </script>
+    <br><br>
+    
+    7<br><br>
+    <div>
+        <button type="button" class="btn btn-dark" id="btnModal">Open Modal</button>
+
+        <div class="modal fade" id="myModal7">
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">7 Lorem, ipsum.</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">7 Lorem ipsum dolor sit amet.</div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $(function(){
+            $('#btnModal').click(function(){
+                $('#myModal7').modal('show');
+            });
+        });
+    </script>
+    <br><br>
+
+    8<br><br>
+    <div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal8">Open Modal</button>
+
+        <div class="modal fade" id="myModal8">
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">8 Lorem, ipsum.</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">8 Lorem ipsum dolor sit amet.</div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function(){   // myModal8 id'li modal gizlendiğinde myModal7 id'li modal gösterilir.
+            $('#myModal8').on('hide.bs.modal', function(e){
+                $('#myModal7').modal('show');
+            });
+        });
+    </script>
+    <br><br>
+
+    9<br><br>
+    <div>
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal9">Open Modal</button>
+
+        <div class="modal fade" id="myModal9">
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">9 Lorem, ipsum.</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">9 Lorem ipsum dolor sit amet.</div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function(){   // myModal9 id'li modal gösterildiğinde myModal7 id'li modal da gösterilir.
+            $('#myModal9').on('show.bs.modal', function(e){
+                $('#myModal7').modal('show');
+            });
+        });
+    </script>
+</body>
+</html>

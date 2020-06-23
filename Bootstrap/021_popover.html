@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="container my-4">
+    1<br><br>
+    <a href="#" data-toggle="popover" data-content="some content" title="popover header" class="btn btn-primary">Toggle popover</a>
+    <br><br>
+
+    2<br><br>
+    <a href="#" data-toggle="popover" data-content="some content" data-placement="top" title="popover header" class="btn btn-primary">Popover on top</a>
+    <br><br>
+
+    3<br><br>
+    <a href="#" data-toggle="popover" data-content="some content" data-placement="right" title="popover header" class="btn btn-primary">Popover on right</a>
+    <br><br>
+
+    4<br><br>
+    <a href="#" data-toggle="popover" data-content="some content" data-placement="bottom" title="popover header" class="btn btn-primary">Popover on bottom</a>
+    <br><br>
+
+    5<br><br>
+    <a href="#" data-toggle="popover" data-content="some content" data-placement="left" title="popover header" class="btn btn-primary float-right">Popover on left</a>
+    <br><br>
+
+    6<br><br>
+    <a href="#" data-toggle="popover" data-content="some content" data-trigger="hover" title="popover header" class="btn btn-primary">Hover popover</a>
+    <br><br>
+
+    7<br><br>
+    <a href="#" data-toggle="popover" data-content="some content" data-trigger="focus" title="popover header" class="btn btn-primary">Focus popover</a>
+    <br><br>
+
+    8<br><br>
+    <button id="btnPopover" data-toggle="popover" data-content="some content" title="popover header" class="btn btn-primary">Toggle popover</button>
+    <br><br>
+    <button type="button" class="btn btn-success" onclick="showPopover()">Show</button>
+    <button type="button" class="btn btn-success" onclick="hidePopover()">Hide</button>
+    <button type="button" class="btn btn-success" onclick="togglePopover()">Toggle</button>
+    <br><br>
+
+    <script>
+        $(function(){
+            $('[data-toggle="popover"]').popover();
+        });
+
+        function showPopover() {
+            $('#btnPopover').popover('show');
+        }
+
+        function hidePopover() {
+            $('#btnPopover').popover('hide');
+        }
+
+        function togglePopover() {
+            $('#btnPopover').popover('toggle');
+        }
+    </script>
+</body>
+</html>

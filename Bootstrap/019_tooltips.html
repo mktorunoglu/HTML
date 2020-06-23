@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="container my-4">
+    1<br><br>
+    <a href="#" class="btn btn-primary" data-toggle="tooltip" title="tooltip text">Hover over me</a>
+    <br><br>
+
+    2<br><br>
+    <button id="btnTooltip" type="button" class="btn btn-success" data-toggle="tooltip" title="<h3>Header</h3><br><p>Tooltip text</p>" data-html="true">Tooltip with HTML</button>
+    <br><br>
+
+    3<br><br>
+    <a href="#" class="btn btn-primary" data-toggle="tooltip" title="tooltip text" data-placement="top">Hover over me</a>
+    <br><br>
+
+    4<br><br>
+    <a href="#" class="btn btn-primary" data-toggle="tooltip" title="tooltip text" data-placement="right">Hover over me</a>
+    <br><br>
+
+    5<br><br>
+    <a href="#" class="btn btn-primary" data-toggle="tooltip" title="tooltip text" data-placement="bottom">Hover over me</a>
+    <br><br>
+
+    6<br><br>
+    <a href="#" class="btn btn-primary" data-toggle="tooltip" title="tooltip text" data-placement="left">Hover over me</a>
+    <br><br>
+    
+    7<br><br>
+    <button type="button" class="btn btn-warning" onclick="showTooltip()">Show Tooltip</button>
+    <button type="button" class="btn btn-warning" onclick="hideTooltip()">Hide Tooltip</button>
+    <button type="button" class="btn btn-warning" onclick="toggleTooltip()">Toggle Tooltip</button>
+
+    <script>
+		$(function() {
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+
+        function showTooltip() {
+			$('#btnTooltip').tooltip('show');
+		}
+
+        function hideTooltip() {
+			$('#btnTooltip').tooltip('hide');
+		}
+
+        function toggleTooltip() {
+			$('#btnTooltip').tooltip('toggle');
+		}
+	</script>
+</body>
+</html>
