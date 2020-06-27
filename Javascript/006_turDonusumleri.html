@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>f12 console</h1>
+    
+    <script>
+        let num1 = "5";
+        let num2 = "10";
+        let total1 = num1 + num2;
+
+        console.log(num1 + num2);
+        console.log(typeof num1);
+        console.log(typeof num2);
+        console.log(total1);
+        console.log(typeof total1);
+
+        let num3 = Number(5);
+        let num4 = Number(10);
+        let total2 = num3 + num4;
+
+        console.log(num3 + num4);
+        console.log(typeof num3);
+        console.log(typeof num4);
+        console.log(total2);
+        console.log(typeof total2);
+
+        let val;
+        // number to string
+        val = String(10);
+        console.log(10);
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        // boolen to string
+        val = String(true);
+        console.log(true);
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        // date to string
+        let val2;
+        val2 = String(new Date());
+        console.log(val2);
+        console.log(typeof val2);
+        console.log(val2.length);
+
+        val2 = String(new Date().getFullYear());
+        console.log(val2);
+        console.log(typeof val2);
+        console.log(val2.length);
+
+        // array to string
+        val = String([1, 2, 3, 4]);
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        // toString()
+        val = (10).toString();
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        val = (false).toString();
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        // string to number
+        val = Number("10");
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+        console.log(val.toFixed(3));
+        console.log(val.toFixed(4));
+
+        val = Number("a");
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        // boolen to number
+        val = Number(true);
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        val = Number(false);
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        val = Number(null);
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        // array to number
+        val = Number([1, 2, 3, 4]);
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        // parseInt()
+        val = parseInt("10");
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        val = parseInt("11.5");
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        // parseFloat()
+        val = parseFloat("12.5");
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+    </script>
+</body>
+</html>
