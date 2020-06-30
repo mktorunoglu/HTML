@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <script>
+        const fullName = "Mehmet Kamil Torunoğlu";
+        const yearOfBirth = 1999;
+        const city = "Samsun";
+        let val;
+
+        val = "My name is " + fullName + ", I'm " + (2020 - yearOfBirth) + " years old and I live in " + city + ".";
+        console.log(val);
+        console.log(typeof val);
+
+        val = `My name is ${fullName}, I'm ${2020 - yearOfBirth} years old and I live in ${city}.`;
+        console.log(val);
+        console.log(typeof val);
+
+        val = `My name is ${fullName}, I'm ${(2020 - yearOfBirth >= 18)? "over 18" : "under 18"} and I live in ${city}.`;
+        console.log(val);
+        console.log(typeof val);
+    </script> 
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <script>
+        let val;
+
+        val = 10;
+        console.log(val);
+        console.log(typeof val);
+
+        val = parseInt("10");
+        console.log(val);
+        console.log(typeof val);
+
+        val = parseInt("10abc");
+        console.log(val);
+        console.log(typeof val);
+
+        val = parseInt("10abc23");
+        console.log(val);
+        console.log(typeof val);
+
+        val = parseInt("d10abc");
+        console.log(val);
+        console.log(typeof val);
+
+        val = isNaN("10");
+        console.log(val);
+        console.log(typeof val);
+
+        val = isNaN("10abc");
+        console.log(val);
+        console.log(typeof val);
+
+        val = isNaN(parseInt("10abc23"));
+        console.log(val);
+        console.log(typeof val);
+
+        val = isNaN("a10");
+        console.log(val);
+        console.log(typeof val);
+
+        var num = 10.123456789;
+
+        val = num.toPrecision();
+        console.log(val);
+        console.log(typeof val);
+
+        val = num.toPrecision(2);
+        console.log(val);
+        console.log(typeof val);
+
+        val = num.toPrecision(4);
+        console.log(val);
+        console.log(typeof val);
+
+        val = num.toFixed();
+        console.log(val);
+        console.log(typeof val);
+
+        val = num.toFixed(2);
+        console.log(val);
+        console.log(typeof val);
+
+        val = num.toFixed(4);
+        console.log(val);
+        console.log(typeof val);
+
+        val = Math.PI;
+        console.log(val);
+        console.log(typeof val);
+
+        val = Math.round(2.4);
+        console.log(val);
+        console.log(typeof val);
+
+        val = Math.round(2.5);
+        console.log(val);
+        console.log(typeof val);
+
+        val = Math.round(2.6);
+        console.log(val);
+        console.log(typeof val);
+
+        val = Math.ceil(2.1);
+        console.log(val);
+        console.log(typeof val);
+
+        val = Math.ceil(2.0);
+        console.log(val);
+        console.log(typeof val);
+
+        val = Math.floor(2.6);
+        console.log(val);
+        console.log(typeof val);
+
+        val = Math.sqrt(25);
+        console.log(val);
+        console.log(typeof val);
+
+        val = Math.pow(2, 3);
+        console.log(val);
+        console.log(typeof val);
+
+        val = Math.abs(-100);
+        console.log(val);
+        console.log(typeof val);
+
+        val = Math.abs(100);
+        console.log(val);
+        console.log(typeof val);
+
+        val = Math.min(4, 6, 2, 8, 4, 6);
+        console.log(val);
+        console.log(typeof val);
+
+        val = Math.max(4, 6, 2, 8, 4, 6);
+        console.log(val);
+        console.log(typeof val);
+
+        val = Math.random();
+        console.log(val);
+        console.log(typeof val);
+
+        val = Math.random()*10;
+        console.log(val);
+        console.log(typeof val);
+
+        val = Math.floor(Math.random()*10);
+        console.log(val);
+        console.log(typeof val);
+
+        val = Math.floor(Math.random()*100+1);   // Çıktı 0 olmaması için +1 yapılmalıdır.
+        console.log(val);
+        console.log(typeof val);
+
+        var min = 50;
+        var max = 100;
+
+        val = Math.floor(min + Math.random()*(max - min));   // 50 ile 100 arası bir sayı oluşturur.
+        console.log(val);
+        console.log(typeof val);
+    </script>
+</body>
+</html>

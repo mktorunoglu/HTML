@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <script>
+        const firstName = "Mehmet Kamil";
+        const lastName = "Torunoğlu";
+        let val;
+
+        val = firstName + lastName;
+        console.log(val);
+        console.log(typeof val);
+
+        val = firstName + " " + lastName;
+        console.log(val);
+        console.log(typeof val);
+
+        val = "Mehmet Kamil";
+        val += "Torunoğlu";
+        console.log(val);
+        console.log(typeof val);
+
+        val = "Mehmet Kamil";
+        val += " Torunoğlu";
+        console.log(val);
+        console.log(typeof val);
+
+        const age = 21;
+        val = "Benim adım " + firstName + " " + lastName + " ve yaşım " + age + ', Samsun\'da yaşıyorum.';
+        console.log(val);
+        console.log(typeof val);
+
+        val = firstName.concat(" ", lastName);
+        console.log(val);
+        console.log(typeof val);
+
+        let name;
+        name = val.length;
+        console.log(name);
+        console.log(typeof name);
+
+        name = val.toUpperCase();
+        console.log(name);
+        console.log(typeof name);
+
+        name = val.toLowerCase();
+        console.log(name);
+        console.log(typeof name);
+
+        name = val[0];
+        console.log(name);
+        console.log(typeof name);
+
+        name = val[1];
+        console.log(name);
+        console.log(typeof name);
+
+        name = val.indexOf("e");
+        console.log(name);
+        console.log(typeof name);
+
+        name = val.indexOf("x");
+        console.log(name);
+        console.log(typeof name);
+
+        name = val.substring(0, 4);
+        console.log(name);
+        console.log(typeof name);
+
+        name = val.substring(0);
+        console.log(name);
+        console.log(typeof name);
+
+        name = val.substring(7);
+        console.log(name);
+        console.log(typeof name);
+
+        name = val.slice(0, 4);
+        console.log(name);
+        console.log(typeof name);
+
+        name = val.slice(0);
+        console.log(name);
+        console.log(typeof name);
+
+        name = val.slice(7);
+        console.log(name);
+        console.log(typeof name);
+
+        name = val.replace("Mehmet", "Kamil");
+        console.log(name);
+        console.log(typeof name);
+
+        name = "   " + val + "   ";
+        console.log(name);
+        console.log(typeof name);
+        name = val.trim();
+        console.log(name);
+        console.log(typeof name);
+
+        var str = "Mehmet";
+        console.log(name.substr(str.length));
+        console.log(typeof name);
+
+        name = val;
+        console.log(name.startsWith("mehmet"));
+        console.log(name.startsWith("Mehmet"));
+
+        name = val;
+        console.log(name.includes("kamil"));
+        console.log(name.includes("Kamil"));
+
+        name = val.replace("e", "a");
+        console.log(name);
+        console.log(typeof name);
+
+        name = val.replace(/e/g, "a");
+        console.log(name);
+        console.log(typeof name);
+
+        let hobbies = "sinema,spor,kitap,yazılım";
+        name = hobbies.split(",");
+        console.log(name);
+        console.log(typeof name);
+
+        hobbies = "sinema spor kitap yazılım";
+        name = hobbies.split(" ");
+        console.log(name);
+        console.log(typeof name);
+    </script>
+</body>
+</html>
