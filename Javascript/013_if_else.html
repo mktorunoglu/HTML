@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <script>
+        const firstName = "Sena";
+        const age = 19;
+        const isStudent = true;
+        const school = "university";
+
+        if(firstName == "Sena"){
+            console.log("Merhaba Sena");
+        }
+
+        if(age == 19){
+            console.log("Yaşınız: 19");
+        }
+
+        if(isStudent){
+            console.log("Merhaba öğrenci");
+        }else{
+            console.log("Merhaba işler nasıl?")
+        }
+
+        if(age >= 18){
+            if(school == "university" || school == "high school"){
+                console.log("Ehliyet alabilirsiniz.");
+            }else{
+                console.log("Eğitim durumunuz yetersiz.")
+            }
+        }else{
+            console.log("Ehliyet alamazsınız.");
+        }
+
+        if(age > 0 && age < 12){
+            console.log(`${firstName} bir çocuktur.`);
+        }else if(age >= 13 && age <= 19){
+            console.log(`${firstName} bir gençtir.`);
+        }else{
+            console.log(`${firstName} bir yetişkindir.`);
+        }
+    </script>   
+</body>
+</html>

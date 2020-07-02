@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <script>
+        let names = [];
+        console.log(names);
+        console.log(typeof names);
+        console.log(names.length);
+
+        names = ["çınar", "sena", "ada", "yiğit"];
+        // names = new Array("çınar", "sena", "ada", "yiğit");
+        console.log(names);
+        console.log(typeof names);
+        console.log(names.length);1
+
+        let years = [2017, 2018, 2019, 2020, 2021];
+        console.log(years);
+        console.log(typeof years);
+        console.log(years.length);
+
+        let mix = ["mehmet", "kamil", 1999, null, undefined, true, ["sinema", "oyun", "yazılım"]];
+        console.log(mix);
+        console.log(typeof mix);
+        console.log(mix.length);
+
+        console.log(names[0]);
+        console.log(typeof names[0]);
+        console.log(names[1]);
+        console.log(typeof names[1]);
+        console.log(names[2]);
+        console.log(typeof names[2]);
+        console.log(names[3]);
+        console.log(typeof names[3]);
+
+        names[0] = "emel";
+        console.log(names);
+
+        names[5] = "hakkı";
+        console.log(names);
+
+        names[names.length] = "selin";
+        names[names.length] = "gamze";
+        console.log(names);
+
+        names.push("elif");
+        console.log(names);
+
+        names.unshift("nalan");
+        console.log(names);
+
+        names.pop();
+        console.log(names);
+
+        names.shift();
+        console.log(names);
+
+        let index = names.indexOf("ada");
+        console.log("index: " + index);
+
+        names.reverse();
+        console.log(names);
+
+        names.sort();
+        console.log(names);
+
+        let val = years.concat(names);
+        console.log(val);
+
+        names.splice(2, 0, "seda");
+        console.log(names);
+
+        names.splice(0, 2);
+        console.log(names);
+
+        function over18(year) {
+            let age = 2020 - year;
+            return age >= 18;
+        }
+        console.log(over18(1999));
+        console.log(over18(2005));
+
+        val = years.find(over18);
+        console.log(val);
+
+        years.push(1991);
+        years.push(1990);
+        val = years.find(over18);
+        console.log(val);
+
+        val = years.filter(over18);
+        console.log(val);
+
+        var numbers = [1, 2, 5, 8, 80, 15];
+        val = numbers.sort();
+        console.log(val);
+
+        function compare(a, b) {
+            if(a > b) return 1;
+            if(a == b) return 0;
+            if(a < b) return -1;
+        }
+        val = numbers.sort(compare);
+        console.log(val);
+
+        var student1 = ["ali", 123, 100];
+        var student2 = ["veli", 456, 50];
+        var student3 = ["taner", 789, 75];
+        var students = [student1, student2, student3];
+        console.log(students);
+        console.log(students[0][0]);
+        console.log(students[0][1]);
+        console.log(students[0][2]);
+        console.log(students[1][0]);
+        console.log(students[1][1]);
+        console.log(students[1][2]);
+        console.log(students[2][0]);
+        console.log(students[2][1]);
+        console.log(students[2][2]);
+    </script>
+</body>
+</html>

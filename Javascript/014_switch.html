@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <script>
+        let category = "telefon";
+        switch(category){
+            case "telefon":
+                console.log("Telefon Kategorisi");
+            break;
+
+            case "bilgisayar":
+                console.log("Bilgisayar Kategorisi");
+            break;
+
+            case "kulaklık":
+                console.log("Kulaklık Kategorisi");
+            break;
+
+            default:
+                console.log("Anasayfa");
+        }
+
+        category = "kıyafet";
+        switch(category){
+            case "telefon":
+                console.log("Telefon Kategorisi");
+            break;
+
+            case "bilgisayar":
+                console.log("Bilgisayar Kategorisi");
+            break;
+
+            case "kulaklık":
+                console.log("Kulaklık Kategorisi");
+            break;
+
+            default:
+                console.log("Anasayfa");
+        }
+
+        let day;
+        switch(new Date().getDay()){
+            case 0:
+                day = "Pazar";
+            break;
+
+            case 1:
+                day = "Pazartesi";
+            break;
+
+            case 2:
+                day = "Salı";
+            break;
+
+            case 3:
+                day = "Çarşamba";
+            break;
+
+            case 4:
+                day = "Perşembe";
+            break;
+
+            case 5:
+                day = "Cuma";
+            break;
+
+            case 6:
+                day = "Cumartesi";
+            break;
+        }
+        console.log(`Bugün günlerden ${day}`);
+
+        switch(new Date().getDay()){
+            case 0:
+            case 6:
+                day = "hafta sonu";
+            break;
+
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                day = "hafta içi";
+            break;
+        }
+        console.log(`Bugün ${day}`);
+
+        const firstName = "Sena";
+        const age = 19;
+        switch(true){
+            case (age > 0 && age < 12):
+                console.log(`${firstName} bir çocuktur.`);
+            break;
+
+            case (age >= 13 && age <= 19):
+                console.log(`${firstName} bir gençtir.`);
+            break;
+            
+            default:
+                console.log(`${firstName} bir yetişkindir.`);
+        }
+    </script>
+</body>
+</html>
