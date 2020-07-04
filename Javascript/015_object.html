@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <script>
+        let person = {
+            firstName: "Mehmet Kamil",
+            lastName: "Torunoğlu",
+            age: 21,
+            hobbies: ["music", "game", "programming"],
+            address: {
+                city: "Samsun",
+                country: "Türkiye"
+            },
+            getBirthYear1: function(){
+                return 2020 - 21;
+            },
+            getBirthYear2: function(){
+                return 2020 - this.age;
+            }
+        }
+        console.log(person);
+        console.log(typeof person);
+
+        val = person.firstName;
+        console.log(val);
+        console.log(typeof val);
+
+        val = person["lastName"];
+        console.log(val);
+        console.log(typeof val);
+
+        val = person.age;
+        console.log(val);
+        console.log(typeof val);
+
+        val = person.hobbies;
+        console.log(val);
+        console.log(typeof val);
+
+        val = person.address;
+        console.log(val);
+        console.log(typeof val);
+
+        val = person.address["city"];
+        console.log(val);
+        console.log(typeof val);
+
+        val = person.getBirthYear1();
+        console.log(val);
+        console.log(typeof val);
+
+        val = person.getBirthYear2();
+        console.log(val);
+        console.log(typeof val);
+
+        let people = [
+            {firstName: "Çınar", lastName: "Turan"},
+            {firstName: "Sena", lastName: "Turan"},
+            {firstName: "Seda", lastName: "Turan"}
+        ];
+        console.log(people);
+        console.log(typeof people);
+
+        val = people[2];
+        console.log(val);
+        console.log(typeof val);
+
+        val = people[1].firstName;
+        console.log(val);
+        console.log(typeof val);
+    </script>
+</body>
+</html>

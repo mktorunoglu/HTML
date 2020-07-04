@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <script>
+        function yasHesapla(dogumYili){
+            return 2020 - dogumYili;
+        }
+        let ageAda = yasHesapla(2012);
+        console.log(ageAda);
+
+        function sum1(a, b){
+            var c = a + b;
+            return c;
+        }
+        console.log(sum1(10, 20));
+
+        const sum2 = function(a, b){
+            var c = a + b;
+            return c;
+        }
+        console.log(sum2(10, 30));
+
+        console.log(sum2(10));
+
+        console.log(sum2(10, 20, 30, 40));
+
+        const sum3 = function(a, b){
+            if(typeof a == "undefined"){ a = 0; }
+            if(typeof b == "undefined"){ b = 0; }
+            var c = a + b;
+            return c;
+        }
+        console.log(sum3(10));
+
+        const sum4 = function(a = 0, b = 0){
+            var c = a + b;
+            return c;
+        }
+        console.log(sum4(10));
+
+        function args(){
+            console.log(arguments);
+        }
+        args(10, 20, 30);
+
+        function sumAll(){
+            var total = 0;
+            for(let i in arguments){
+                total += arguments[i];
+            }
+            return total;
+        }
+        console.log(sumAll(10, 20, 30, 40));
+    </script>
+</body>
+</html>

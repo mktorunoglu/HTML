@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <script>
+        for(let i=0; i<10; i++){
+            console.log(i);
+        }
+
+        for(let i=0; i<10; i++){
+            if(i==3){
+                console.log("3'ü yazdırır.");
+            }
+            console.log(i);
+        }
+
+        for(let i=0; i<10; i++){
+            if(i==3){
+                console.log("3'ü pas geçer.");
+                continue;
+            }
+            console.log(i);
+        }
+
+        for(let i=0; i<10; i++){
+            if(i==3){
+                console.log("3'ten itibaren pas geçer.");
+                break;
+            }
+            console.log(i);
+        }
+
+        let i = 0;
+        while(i<10){
+            console.log(i);
+            i++;
+        }
+
+        i = 0;
+        do{
+            console.log(i);
+            i++;
+        }while(i<10)
+
+        let cars = ["bmw", "mercedes", "toyota"];
+        for(let i=0; i<cars.length; i++){
+            console.log(cars[i]);
+        }
+
+        for(let i in cars){
+            console.log(cars[i]);
+        }
+
+        for(let i in cars){
+            console.log(i);
+        }
+
+        cars.forEach(function(item){
+            console.log(item);
+        });
+
+        let people = [
+            {firstName: "Ada", lastName: "Türk"},
+            {firstName: "Hakan", lastName: "Akın"},
+            {firstName: "Yeliz", lastName: "Gümüş"}
+        ]
+        for(let i=0; i<people.length; i++){
+            console.log(people[i].firstName);
+        }
+
+        people.forEach(function(item){
+            console.log(item.lastName);
+        });
+
+        let val = people.map(function(item){
+            return item.firstName + " " + item.lastName;
+        });
+        console.log(val);
+
+        let numbers = [1, 2, 3, 4, 5];
+        let num = numbers.map(function(n){
+            return n*n;
+        });
+        console.log(num);
+    </script>
+</body>
+</html>
