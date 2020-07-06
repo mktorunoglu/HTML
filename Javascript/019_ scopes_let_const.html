@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <script>
+        // Global Scopes
+        var name = "Mehmet";
+        function log1(){
+            console.log(name);
+        }
+        log1();
+        console.log(name);
+
+        // Local Scopes
+        function log2(){
+            var name = "Kamil";
+            console.log(name);
+        }
+        log2();
+        console.log(name);
+
+        function log3(){
+            var age1 = 21;
+            console.log(age1);
+        }
+        log3();
+     // console.log(age1);   //Çalıştırıldığında hata verir.
+
+        var age2 = 5;
+        if(true){
+            var age2 = 10;
+        }
+        console.log(age2);
+
+        let age3 = 8;
+        if(true){
+            let age3 = 9;
+            console.log(age3);
+        }
+        console.log(age3);
+
+        if(true){
+            const age4 = 15;
+            console.log(age4);
+        }
+     // console.log(age4);   //Çalıştırıldığında hata verir.
+
+        var i = 1;
+        for(var i=0; i<10; i++){
+            console.log("i", i);
+        }
+        console.log(i);
+
+        let j = 1;
+        for(let j=0; j<10; j++){
+            console.log("j", j);
+        }
+        console.log(j);
+    </script>
+</body>
+</html>
