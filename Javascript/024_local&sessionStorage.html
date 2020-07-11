@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<style>
+        a{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container p-3">	
+		<h1 class="app-title" id="header">f12 console application</h1>	
+		<div class="card">
+			<div class="card-header">New Task</div>
+
+			<div class="card-body">
+				<form id="addTaskForm">
+					<div class="input-group mb-3">
+						<input id="txtTaskName" name="taskName" type="text" class="form-control" placeholder="Type a new task" aria-describedby="btnAddNewTask">
+						<div class="input-group-append">
+							<button class="btn btn-primary" type="button" id="btnAddNewTask">
+								<i class="fas fa-plus"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="card mt-3">
+			<div class="card-header">Task List
+				<a id="btnDeleteAll" href="#" class="btn btn-outline-danger btn-sm delete-all float-right">Delete All</a>
+			</div>
+			<ul id="task-list" class="list-group">
+				<li class="list-group-item list-group-item-secondary">To do item
+					<a href="#" class="delete-item float-right">
+						<i class="fas fa-times"></i>
+					</a>
+				</li>
+
+				<li class="list-group-item list-group-item-secondary">To do item
+					<a href="#" class="delete-item float-right">
+						<i class="fas fa-times"></i>
+					</a>
+				</li>
+
+				<li class="list-group-item list-group-item-secondary">To do item
+					<a href="#" class="delete-item float-right">
+						<i class="fas fa-times"></i>
+					</a>
+				</li>
+
+				<li class="list-group-item list-group-item-danger">To do item
+					<a href="#" class="delete-item float-right">
+						<i class="fas fa-times"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+        // LOCAL STORAGE : Bilgiler, tarayıcı kapansa bile saklanır.
+        console.log(localStorage);   // Satırdan sonraki değişikliklerden etkilenir.
+
+		// set items
+        const firstName = localStorage.setItem("firstName", "Mehmet");
+        const lastName = localStorage.setItem("lastName", "Kamil");
+        console.log(localStorage);
+
+		// get items
+		val = localStorage.getItem("firstName");
+		console.log(val);
+
+		val = localStorage.getItem("lastName");
+		console.log(val);
+
+		// remove items
+		localStorage.removeItem("firstName");
+		console.log(localStorage);
+
+		localStorage.removeItem("lastName");
+		console.log(localStorage);
+
+		// clear
+		const firstName2 = localStorage.setItem("firstName2", "Mehmet");
+        const lastName2 = localStorage.setItem("lastName2", "Kamil");
+        console.log(localStorage);
+
+		localStorage.clear();
+		console.log(localStorage);
+
+		// set array to storage 
+		let hobbies = ["sinema", "yazılım", "oyun"];
+		localStorage.setItem("hobbies", hobbies);
+		console.log(localStorage);
+
+		val = localStorage.getItem("hobbies");
+		console.log(val);
+
+		localStorage.setItem("hobbies", JSON.stringify(hobbies));   // Object olarak kaydedilir.
+		console.log(localStorage);
+
+		val = localStorage.getItem("hobbies");
+		console.log(val);
+
+		val = JSON.parse(localStorage.getItem("hobbies"));
+		console.log(val);
+
+
+        // SESSION STORAGE : Bilgiler, tarayıcı açık kaldığı sürece saklanır.
+        console.log(sessionStorage);   // Satırdan sonraki değişikliklerden etkilenir.
+
+		const city = sessionStorage.setItem("city", "Samsun");
+        const country = sessionStorage.setItem("country", "Türkiye");
+		console.log(sessionStorage);
+	</script>
+</body>
+</html>

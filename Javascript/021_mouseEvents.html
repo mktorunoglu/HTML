@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<style>
+        a{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container p-3">	
+		<h1 class="app-title" id="header">f12 console</h1>	
+		<div class="card">
+			<div class="card-header">New Task</div>
+
+			<div class="card-body">
+				<form id="addTaskForm">
+					<div class="input-group mb-3">
+						<input id="txtTaskName" name="taskName" type="text" class="form-control" placeholder="Type a new task" aria-describedby="btnAddNewTask">
+						<div class="input-group-append">
+							<button class="btn btn-primary" type="button" id="btnAddNewTask">
+								<i class="fas fa-plus"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="card mt-3">
+			<div class="card-header">
+                <h5>Task List</h5>
+				<a id="btnDeleteAll" href="#" class="btn btn-outline-danger btn-sm delete-all float-right">Delete All</a>
+			</div>
+			<ul id="task-list" class="list-group">
+				<li class="list-group-item list-group-item-secondary">To do item
+					<a href="#" class="delete-item float-right">
+						<i class="fas fa-times"></i>
+					</a>
+				</li>
+
+				<li class="list-group-item list-group-item-secondary">To do item
+					<a href="#" class="delete-item float-right">
+						<i class="fas fa-times"></i>
+					</a>
+				</li>
+
+				<li class="list-group-item list-group-item-secondary">To do item
+					<a href="#" class="delete-item float-right">
+						<i class="fas fa-times"></i>
+					</a>
+				</li>
+
+				<li class="list-group-item list-group-item-danger">To do item
+					<a href="#" class="delete-item float-right">
+						<i class="fas fa-times"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+		const btn = document.querySelector("#btnDeleteAll");
+        btn.addEventListener("click", function(){
+            console.log("button clicked");   // "Delete All" butonuna basıldığında console penceresine yazdırılır.
+        });
+
+        btn.addEventListener("dblclick", function(){
+            console.log("button double clicked");   // "Delete All" butonuna çift basıldığında console penceresine yazdırılır.
+        });
+
+        btn.addEventListener("mousedown", function(){
+            console.log("button mousedown");   // "Delete All" butonuna basıldığı an console penceresine yazdırılır.
+        });
+
+        btn.addEventListener("mouseup", function(){
+            console.log("button mouseup");   // "Delete All" butonuna basıldığıktan sonra console penceresine yazdırılır.
+        });
+
+        btn.addEventListener("mouseenter", function(){
+            console.log("button mouseenter");   // "Delete All" butonunun alanına girildiğinde console penceresine yazdırılır.
+        });
+
+        btn.addEventListener("mouseleave", function(){
+            console.log("button mouseleave");   // "Delete All" butonunun alanından çıkıldığında console penceresine yazdırılır.
+        });
+
+        btn.addEventListener("mouseover", function(){
+            console.log("button mouseover");   // "Delete All" butonunda ilgili alana girildiğinde console penceresine yazdırılır.
+        });
+
+        btn.addEventListener("mouseout", function(){
+            console.log("button mouseout");   // "Delete All" butonunda ilgili alandan çıkıldığında console penceresine yazdırılır.
+        });
+
+        btn.addEventListener("mousemove", function(){
+            console.log("button mousemove");   // "Delete All" butonunun alanına girildiğinde gezilen koordinat kadar console penceresine yazdırılır.
+        });
+
+        const h5 = document.querySelector("h5");
+        btn.addEventListener("mousemove", function(e){
+            h5.textContent = `Mouse X: ${e.offsetX}, Mouse Y: ${e.offsetY}`;
+        });
+	</script>
+</body>
+</html>
