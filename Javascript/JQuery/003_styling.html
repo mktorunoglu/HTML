@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 id="header1">f12 console</h1>
+
+    <a href="#">Link 1</a>
+    <h3 id="header2">JQuery Dersleri</h3>
+    <ul id="liste">
+        <li class="item">JQuery Reference</li>
+        <li class="item">Selectors <a href="#">Link 2</a> </li>
+        <li class="item">JQuery Plugins</li>
+    </ul>
+
+    <script>
+        document.getElementById("header1").style.color="red";
+
+        $("#header2").css("color", "yellow");
+
+        $("#liste a").css("text-decoration", "none");
+
+        var styles={
+            color:"yellow",
+            fontSize:"20px",
+            border:"1px solid red"
+        }
+        $("ul li").css(styles);
+
+        var listeler = document.querySelectorAll("li");
+        for(var i=0; i<listeler.length; i++){
+            listeler[i].style.color="green";
+        }
+
+        $(".item").css({
+            fontSize:"40px"
+        });
+    </script>
+</body>
+</html>
