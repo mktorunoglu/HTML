@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <style>
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <h1>JQuery Helper Methods</h1>
+    <ul>
+        <li class="item">JQuery Reference</li>
+        <li class="item">JQuery Selectors</li>
+        <li class="item">JQuery Methods</li>
+    </ul>
+
+    <input type="text" placeholder="Full Name" value="JqueryValue">
+
+    <br><br>
+
+    <input id= "ad" type="text" placeholder="TEST: Adınızı giriniz">
+    <input id= "soyad" class="green" type="text" placeholder="TEST: Soyadınızı giriniz">
+    <button id="btnKaydet" onclick="adSoyad();">Konsola yazdır</button>
+
+    <img src="img/image1.png" alt="" width="400px">
+
+    <button onclick="showImg();">Resmi Göster</button>
+    <button onclick="hideImg();">Resmi Gizle</button>
+
+    <script>
+        console.log($("h1").text());
+
+        console.log($("ul li").text());
+
+        $("h1").text("Javascript");
+        console.log($("h1").text());
+
+        console.log($("input").val());
+
+        $("input").val("12345");
+        console.log($("input").val());
+
+        function adSoyad(){
+            var ad = $("#ad").val();
+            var soyad = $("#soyad").val();
+            console.log("Adınız ve soyadınız: " + ad + " " + soyad);
+            $("#ad").addClass("yellow");
+            $("#soyad").removeClass("green");
+            $("#btnKaydet").toggleClass("blue");
+        }
+
+        $("img").attr("width", "40px");
+
+        function showImg(){
+            $("img").show();
+        }
+
+        function hideImg(){
+            $("img").hide();
+        }
+    </script>
+</body>
+</html>

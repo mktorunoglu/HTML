@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <style>
+        .yellow{
+            color: yellow;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            color: blue;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <p id="p1">Web Developer Eğitimi 1</p>
+    <p id="p2">Web Developer Eğitimi 2</p>
+    <p class="paragraf">Web Developer Eğitimi 3</p>
+    <p class="paragraf">Web Developer Eğitimi 4</p>
+
+    <script>
+        $(document).ready(function(){
+            console.log("document ready 1");
+        });
+
+        $(function(){
+            console.log("document ready 2");
+        });
+
+        $(document).ready(function(){
+            $("#p1").click(function(){
+                console.log("p1 click event");
+                $(this).addClass("yellow");
+            });
+        });
+
+        $(document).ready(function(){
+            $("#p2").click(function(){
+                console.log("p2 click event");
+                $(this).toggleClass("green");
+            });
+        });
+
+        $(document).ready(function(){
+            $(".paragraf").click(function(){
+                console.log("paragraf 1 click event");
+                $(this).toggleClass("blue");
+            });
+        });
+    /*  
+        $(document).ready(function(){
+            $(".paragraf").click(function(){
+                console.log("paragraf 2 click event");
+                $(".paragraf").toggleClass("red");   // Yukarıdaki this kullanılmamış olsaydı class'ı "paragraf" olan tüm etiketler renk değiştirirdi.
+            });
+        });
+    */
+    </script>
+</body>
+</html>
