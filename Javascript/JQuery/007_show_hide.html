@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <p>Sıfırdan Web Developer Eğitimi</p>
+    <button id="hide1">Hide 1</button>
+    <button id="show1">Show 1</button>
+    <button id="toggle">Toggle</button>
+    <button id="hide2">Hide 2</button>
+    <button id="show2">Show 2</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#hide1").click(function(){
+                $("p").hide();
+            });
+
+            $("#show1").click(function(){
+                $("p").show();
+            });
+
+            $("#toggle").click(function(){
+                $("p").toggle("slow");
+            });
+
+            $("#hide2").click(function(){
+                $("p").hide(300);
+            });
+
+            $("#show2").click(function(){
+                $("p").show(300, function(){
+                    console.log("paragraf gösterildi");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
