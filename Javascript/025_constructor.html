@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+	<script>
+        function Person(name, yearOfBirthday, job){
+            this.name = name;
+            this.yearOfBirthday = yearOfBirthday;
+            this.job = job;
+            this.age = function(){
+                return 2020 - this.yearOfBirthday;
+            }
+            console.log(this);
+        }
+
+        let yigit = new Person("Yiğit", 2010, "student");
+        let emel = new Person("Emel", 1989, "teacher");
+
+        console.log(yigit.yearOfBirthday);
+        console.log(emel.job);
+        console.log(yigit.age());
+        console.log(emel.age());
+	</script>
+</body>
+</html>
