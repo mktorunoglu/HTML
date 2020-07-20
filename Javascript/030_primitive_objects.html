@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <script>
+        var a = 10;
+        var b = a;
+        console.log(a);
+        console.log(b);
+        a = 15;   // "b" değeri etkilenmez.
+        console.log(a);
+        console.log(b);
+
+        var obj1 = {num : 10}
+        var obj2 = obj1;
+        console.log(obj1);
+        console.log(obj2);
+        obj1.num = 15;   // "obj2" objesi de etkilenir.
+        console.log(obj1);
+        console.log(obj2);
+
+        var num = 50;
+        var account = {
+            name : "Yiğit",
+            accountNumber : "12345"
+        }
+        function update(a, b){
+            a = 100;
+            b.accountNumber = "11111";
+        }
+        update(num, account);
+        console.log(num);
+        console.log(account);
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <script>
+        // String
+        var str1 = "Sadık";
+        var str2 = new String("Sadık");
+        console.log(str1);
+        console.log(typeof str1);
+        console.log(str2);
+        console.log(typeof str2);
+
+        if(str1 === "Sadık"){
+            console.log("Yes");
+        }else{
+            console.log("No");
+        }
+
+        if(str2 === "Sadık"){
+            console.log("Yes");
+        }else{
+            console.log("No");
+        }
+
+        String.prototype.repeat = function(n){
+            return new Array(n+1).join(this);
+        }
+        console.log("Sadık".repeat(4));
+
+        // Number
+        var num1 = 10;
+        var num2 = new Number(10);
+        console.log(num1);
+        console.log(typeof num1);
+        console.log(num2);
+        console.log(typeof num2);
+
+        // Boolean
+        var bool1 = true;
+        var bool2 = new Boolean(true);
+        console.log(bool1);
+        console.log(typeof bool1);
+        console.log(bool2);
+        console.log(typeof bool2);
+
+        // Object
+        var obj1 = {
+            name: "Sadık"
+        };
+        var obj2 = new Object({
+            name: "Sadık"
+        });
+        console.log(obj1);
+        console.log(typeof obj1);
+        console.log(obj2);
+        console.log(typeof obj2);
+
+        // Array
+        var arr1 = ["Ada", "Yiğit", "Sena", "Çınar"];
+        var arr2 = new Array("Ada", "Yiğit", "Sena", "Çınar");
+        console.log(arr1);
+        console.log(typeof arr1);
+        console.log(arr2);
+        console.log(typeof arr2);
+
+        Array.prototype.remove = function(member){
+            var index = this.indexOf(member);
+            if(index > -1){
+                this.splice(index, 1);
+            }
+            return this;
+        }
+        console.log(arr1.remove("Sena"));
+    </script>
+</body>
+</html>
