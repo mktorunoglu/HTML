@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <script>
+        var welcome = function(){
+            console.log("Welcome " + this.name + ".");
+        }
+        var yigit = {name: "Yiğit"};
+        var ada = {name: "Ada"};
+        welcome.call(yigit);
+        welcome.call(ada);
+
+        console.log("--------------------");
+
+        welcome.apply(yigit);
+        welcome.apply(ada);
+
+        console.log("--------------------");
+
+        welcomeYigit = welcome.bind(yigit);
+        welcomeAda = welcome.bind(ada);
+        welcomeYigit();
+        welcomeAda();
+
+        console.log("--------------------");
+
+        var welcome2 = function(a, b){
+            console.log("Welcome " + this.name + ". Are you interested in " + a + " and " + b + "?");
+        }
+        welcome2.call(yigit, "HTML", "Java");
+        welcome2.call(ada, "HTML", "Java");
+
+        console.log("--------------------");
+
+        welcome2.apply(yigit, ["HTML", "Java"]);
+        welcome2.apply(ada, ["HTML", "Java"]);
+
+        console.log("--------------------");
+
+        welcomeYigit = welcome2.bind(yigit);
+        welcomeAda = welcome2.bind(ada);
+        welcomeYigit("HTML", "Java");
+        welcomeAda("HTML", "Java");
+    </script>
+</body>
+</html>

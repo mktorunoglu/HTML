@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <script>
+        try{
+            console.log(myFunction());
+        }catch(error){
+            console.log(error);   // Hata mesajı console ekranına log çıktısı olarak yazdırılır.
+            console.log(error.name);
+            console.log(error.message);
+            console.log(typeof error);
+            console.log(error instanceof ReferenceError);
+            console.log(error instanceof TypeError);
+            console.log(error instanceof SyntaxError);
+            console.log(error instanceof URIError);
+        }
+
+        console.log("--------------------");
+
+        var user = {name: "Mehmet Kamil"}
+        try{
+            console.log(user.name);
+            console.log(user.email);
+        }catch(error){
+            console.log(error);
+        }
+
+        console.log("--------------------");
+
+        try{
+            console.log(user.name);
+            if(user.email){
+                console.log(user.email);
+            }else{
+                throw new Error("User has no email.");
+            }
+        }catch(error){
+            console.log(error);
+        }
+        finally{
+            console.log("Hata olup olmaksızın yazdırılır.");
+        }
+    </script>
+</body>
+</html>

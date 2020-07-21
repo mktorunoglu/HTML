@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <script>
+        //ES5
+        let welcomeES5 = function(){
+            console.log("Hello from ES5.");
+        }
+        welcomeES5();
+
+        let splitES5 = function(text){
+            return text.split(" ");
+        }
+        console.log(splitES5("Modern Javascript Kursu"));
+
+        //ES6
+        let welcomeES6 = () => {
+            console.log("Hello from ES6.");
+        }
+        welcomeES6();
+
+        let multiply1 = (a, b) => {
+            return a * b;
+        }
+        console.log(multiply1(4, 5));
+
+        let multiply2 = (a, b) => a * b;
+        console.log(multiply2(5, 6));
+
+        let splitES6 = text => text.split(" ");
+        console.log(splitES6("Web Programlama Kursu"));
+    </script>
+</body>
+</html>
