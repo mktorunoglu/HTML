@@ -21,6 +21,16 @@
         }
         console.log(splitES5("Modern Javascript Kursu"));
 
+        let getProductES5 = function(id, name){
+            return{
+                id: id,
+                name: name
+            }
+        }
+        console.log(getProductES5("1", "Samsung Galaxy S8"));
+
+        console.log("--------------------");
+
         //ES6
         let welcomeES6 = () => {
             console.log("Hello from ES6.");
@@ -37,6 +47,12 @@
 
         let splitES6 = text => text.split(" ");
         console.log(splitES6("Web Programlama Kursu"));
+
+        let getProductES6 = (id, name) => ({
+                id: id,
+                name: name
+            });
+        console.log(getProductES6("2", "Samsung Galaxy S9"));
     </script>
 </body>
 </html>
