@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <script>
+        // ES5
+        let list1 = {
+            category: "phone",
+            names: ["Iphone 8", "Samsung S8", "Iphone 7"],
+            call: function(){
+                this.names.map(function(name){
+                    console.log(`${this.category}: ${name}`);
+                });
+            }
+        }
+        list1.call();
+
+        let list2 = {
+            category: "phone",
+            names: ["Iphone 8", "Samsung S8", "Iphone 7"],
+            call: function(){
+                var self = this;
+                this.names.map(function(name){
+                    console.log(`${self.category}: ${name}`);
+                });
+            }
+        }
+        list2.call();
+
+        function Game1(){
+            this.live = 0;
+            this.addLive = function(){
+                this.OneUp = setInterval(function(){
+                    console.log("ES5 this " + ++this.live);
+                }, 1000);
+            }
+        }
+        let player1 = new Game1();
+        player1.addLive();
+
+        function Game2(){
+            this.live = 0;
+            this.addLive = function(){
+                var self = this;
+                this.OneUp = setInterval(function(){
+                    console.log("ES5 self " + ++self.live);
+                }, 1000);
+            }
+        }
+        let player2 = new Game2();
+        player2.addLive();
+
+        console.log("--------------------");
+
+        // ES6
+        let list3 = {
+            category: "phone",
+            names: ["Iphone 8", "Samsung S8", "Iphone 7"],
+            call: function(){
+                this.names.map(name => {
+                    console.log(`${this.category}: ${name}`);
+                });
+            }
+        }
+        list3.call();
+
+        function Game3(){
+            this.live = 0;
+            this.addLive = function(){
+                this.OneUp = setInterval(() => {
+                    console.log("ES6 this " + ++this.live);
+                }, 1000);
+            }
+        }
+        let player3 = new Game3();
+        player3.addLive();
+    </script>
+</body>
+</html>
