@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>f12 console</h1>
+
+    <script>
+        const first1 = ()=>{
+            console.log("first1");
+            second1();
+        }
+        const second1 = ()=>{
+            console.log("second1");
+            third1();
+        }
+        const third1 = ()=>{
+            console.log("third1");
+        }
+        first1();
+
+        console.log("-----------------");
+
+        const first2 = ()=>{
+            setTimeout(()=>{
+                console.log("first2");   // 1 saniye sonra yazdırılır.
+            }, 1000);
+            second2();
+        }
+        const second2 = ()=>{
+            console.log("second2");
+            third2();
+        }
+        const third2 = ()=>{
+            console.log("third2");
+        }
+        first2();
+    </script>
+</body>
+</html>
